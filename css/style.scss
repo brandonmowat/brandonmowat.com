@@ -1,0 +1,126 @@
+// Copyright // --------------------------------------------------
+// Made entirely by Brandon Mowat
+// created by STRAPPY (A script the help you get working.)
+/* Copyright Brandon Mowat */
+
+// Global Variables // --------------------------------------------------
+// fonts
+$font-primary: 'Helvetica Neue',sans-serif;
+$font-secondary: "source code pro",sans-serif;
+// colors
+$color-primary: rgb(0,0,0);
+$color-secondary: rgb(60,60,60);
+$color-link: #ED45E9;
+// animations and transitions
+@mixin transition($transition) { // USAGE: @include transition(all .2s ease-in);
+  -webkit-transition: $transition;
+     -moz-transition: $transition;
+      -ms-transition: $transition;
+       -o-transition: $transition;
+          transition: $transition;
+}
+// utilities (eg., underline, pull-left)
+// structure elements (grid columns, containers, wrappers, ect.)
+.container {
+	margin: 0 auto;
+	padding: 0 10px;
+	width: calc(100% - 20px); // (width - 'padding on left and right')
+	max-width: 900px;
+}
+.grid {
+	overflow: auto;
+}
+.grid > * {
+	float: left
+}
+.col-1-2 {
+	width: 50%;
+}
+.col-1-3 {
+	width: 33.3333%;
+}
+.flex-centered-vertical {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+// Main CSS // --------------------------------------------------
+html,body {
+	margin:0;
+	padding:0;
+	font-family:$font-primary;
+}
+h1 {
+}
+p {
+	font-family: $font-secondary;
+}
+a {
+	text-decoration: none;
+}
+
+// Navigation //  --------------------------------------------------
+header {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+}
+
+// Hero section //  --------------------------------------------------
+section.hero {
+}
+section.hero .inner .header-parallax,
+section.hero svg {
+	-webkit-transition: transform 0.2s ease;
+	transition: transform 0.2s ease;
+}
+section.hero .inner {
+	height: 100%;
+	position: relative;
+}
+section.hero h1.title {
+	line-height: 0.9;
+	z-index: 5;
+	margin: 0;
+	position: absolute;
+	left: 10.5%;
+	top: calc(100% - 400px);
+	font-size: 100px;
+}
+section.hero img.feature-rectangle {
+	width: 250px;
+	position: absolute;
+	left: calc(50% - 125px);
+	bottom: calc(50% - 185px);
+}
+// SVG positioning
+section.hero svg._1,
+section.hero svg._2,
+section.hero svg._3,
+section.hero svg._4,
+section.hero svg._5 {
+	position: absolute;
+}
+
+section.hero svg._1 {
+	bottom: 60%;
+	left: 65%;
+}
+section.hero svg._2 {
+	bottom: 10%;
+	left: 30%;
+}
+section.hero svg._3 {
+	bottom: 80%;
+	left: 60%;
+}
+section.hero svg._4 {
+	bottom: 90%;
+	left: 10%;
+}
+section.hero svg._5 {
+	bottom: 30%;
+	left: 90%;
+}
