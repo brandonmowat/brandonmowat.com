@@ -33,6 +33,29 @@ p {
 a {
   text-decoration: none; }
 
+.sidebar {
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -webkit-transition-timing-function: ease;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-weight: 300;
+  height: 40px;
+  left: 30px;
+  letter-spacing: 4px;
+  opacity: 1;
+  position: fixed;
+  text-transform: uppercase;
+  top: 45%;
+  transform: matrix(0, 1, -1, 0, 0, 0);
+  transform-origin: 0px 40px;
+  transition-delay: 2.2s;
+  transition-duration: 0.2s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+  width: 151.515625px;
+  z-index: 40; }
+
 header {
   position: absolute;
   top: 0;
@@ -53,8 +76,8 @@ section.hero h1.title {
   z-index: 5;
   margin: 0;
   position: absolute;
-  left: 10.5%;
-  top: calc(100% - 400px);
+  left: 9%;
+  top: calc(40%);
   font-size: 100px; }
 
 section.hero img.feature-rectangle {
