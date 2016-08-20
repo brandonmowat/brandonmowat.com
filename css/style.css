@@ -1,15 +1,26 @@
 /* Copyright Brandon Mowat */
 .container {
   margin: 0 auto;
-  padding: 0 10px;
-  width: calc(100% - 20px);
-  max-width: 900px; }
+  padding: 0 0px;
+  width: calc(100% - 0px); }
+
+.paper {
+  background-color: #fff;
+  padding: 50px 10%;
+  width: 60%;
+  margin: 0 10%; }
 
 .grid {
   overflow: auto; }
 
 .grid > * {
   float: left; }
+
+.col-1-10 {
+  width: calc((1/10)*100%); }
+
+.col-8-10 {
+  width: calc((8/10)*100%); }
 
 .col-1-2 {
   width: 50%; }
@@ -27,11 +38,23 @@ html, body {
   padding: 0;
   font-family: "Helvetica Neue", sans-serif; }
 
-p {
+body {
+  background-color: #F1F1F1; }
+
+h3,
+p,
+ul li {
   font-family: "source code pro", sans-serif; }
 
 a {
+  color: #2100ff;
   text-decoration: none; }
+
+li {
+  list-style-type: none; }
+
+em {
+  font-weight: 800; }
 
 .sidebar {
   -webkit-transition-duration: 0.2s;
@@ -62,29 +85,48 @@ header {
   right: 0;
   left: 0; }
 
+section.header {
+  padding: 100px 0;
+  background-color: #41B5FF; }
+
+section.header .inner {
+  width: 80%;
+  margin: 0 auto; }
+
+section.header h1 {
+  color: #FFF; }
+
+section.journal {
+  transform: translate3d(0, -50px, 0); }
+
+section.journal ul li {
+  list-style-type: disc; }
+
 section.hero .inner .header-parallax,
 section.hero svg {
-  -webkit-transition: transform 0.2s ease;
-  transition: transform 0.2s ease; }
+  -webkit-transition: transform 0.2s linear;
+  transition: transform 0.2s linear; }
 
 section.hero .inner {
   height: 100%;
   position: relative; }
 
 section.hero h1.title {
+  color: #2100ff;
   line-height: 0.9;
   z-index: 5;
   margin: 0;
   position: absolute;
-  left: 9%;
+  left: 20%;
   top: calc(40%);
   font-size: 100px; }
 
+section.hero .feature-photo {
+  height: 100%; }
+
 section.hero img.feature-rectangle {
-  width: 250px;
-  position: absolute;
-  left: calc(50% - 125px);
-  bottom: calc(50% - 185px); }
+  width: 30%;
+  left: 35%; }
 
 section.hero svg._1,
 section.hero svg._2,
@@ -112,5 +154,8 @@ section.hero svg._4 {
 section.hero svg._5 {
   bottom: 30%;
   left: 90%; }
+
+section.about .pull-right {
+  margin: 0 10%; }
 
 /*# sourceMappingURL=style.css.map */
