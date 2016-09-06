@@ -1,0 +1,38 @@
+@import '../variables';
+
+.accordian {
+  margin-top: 15px;
+}
+
+.accordian--item {
+  align-items: center;
+  border-bottom: 1px solid $light-gray;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+
+  span {
+    color: $font-color;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .cta {
+    color: $purple;
+    font-weight: 600;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: all .3s ease;
+  }
+}
+
+.accordian--item:hover {
+  .cta {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

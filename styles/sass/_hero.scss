@@ -1,0 +1,36 @@
+@import 'variables';
+
+.logo {
+  // background-color: $purple;
+
+  img {
+    width: 150px;
+  }
+}
+
+.hero {
+  // background-color: $purple;
+  // color: $white;
+  padding-bottom: 200px;
+
+  .hero--content {
+    //padding-top: 100px;
+
+    .title {
+      font-size: 70px;
+    }
+
+    h1 {
+      font-weight: 400;
+      letter-spacing: -.02em;
+    }
+  }
+}
+
+.short-intro {
+  margin-top: 40px;
+
+  h3 {
+    margin: 10px 0;
+  }
+}

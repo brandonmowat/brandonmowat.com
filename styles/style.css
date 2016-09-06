@@ -46,12 +46,12 @@ h4 {
 h5 {
   color: rgba(0, 0, 0, 0.3);
   font-size: 16px;
-  margin-bottom: 15px; }
+  margin-bottom: 25px; }
 
 p {
   font-size: 20px;
   line-height: 1.6;
-  margin: 15px 0; }
+  margin: 25px 0; }
 
 em {
   color: #947fff;
@@ -62,6 +62,34 @@ em {
   font-size: 20px;
   font-weight: 400; }
 
+.accordian {
+  margin-top: 15px; }
+
+.accordian--item {
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative; }
+  .accordian--item span {
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    padding-top: 20px; }
+  .accordian--item .cta {
+    color: #947fff;
+    font-weight: 600;
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+    transition: all .3s ease; }
+
+.accordian--item:hover .cta {
+  opacity: 1;
+  transform: translate3d(0, 0, 0); }
+
 section {
   padding: 100px 0; }
 
@@ -71,7 +99,7 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 1000px; }
+  max-width: 90%; }
 
 .container--inner {
   padding: 0 50px; }
@@ -84,7 +112,7 @@ section {
   display: flex; }
 
 .col {
-  margin-right: 50px; }
+  margin-right: 8%; }
 
 .col:last-child {
   margin: 0; }
@@ -140,30 +168,6 @@ section {
   object-fit: cover;
   width: 100%; }
 
-.accordian {
-  margin-top: 15px; }
-
-.accordian--item {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: space-between;
-  overflow: hidden; }
-  .accordian--item span {
-    color: rgba(0, 0, 0, 0.8);
-    display: block;
-    font-weight: 200;
-    padding: 20px 0; }
-  .accordian--item .cta {
-    color: #947fff;
-    font-weight: 600;
-    opacity: 0;
-    transform: translate3d(0, 100px, 0);
-    transition: all .3s ease; }
-
-.accordian--item:hover .cta {
-  opacity: 1;
-  transform: translate3d(0, 0, 0); }
-
 .chat {
   padding-right: 40px;
   width: calc(50% - 40px); }
@@ -200,5 +204,26 @@ section {
     margin: 0 auto; }
     .chat-history .inner > div {
       overflow: auto; }
+
+.work-history .work-title {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+.current-employer {
+  padding-left: 20px;
+  position: relative; }
+
+.current-employer::before {
+  background: #7fff94;
+  border-radius: 100%;
+  content: '';
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 27px;
+  width: 10px;
+  z-index: 10; }
 
 /*# sourceMappingURL=style.css.map */

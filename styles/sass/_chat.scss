@@ -1,0 +1,38 @@
+@import 'variables';
+
+.chat-section {
+  margin-right: 40px;
+}
+
+.message-input {
+  border: 0;
+  border-top: 1px solid $light-gray;
+  font-size: 20px;
+  margin: 0 40px;
+  padding: 40px;
+  width: calc(100% - 40px);
+}
+
+.message-input:focus {
+  outline: none;
+}
+
+.chat-history {
+  display: block;
+  max-height: 400px;
+
+  .outer {
+    display: block;
+    height: 50%;
+    overflow-y: scroll;
+    position: relative;
+  }
+
+  .inner {
+    margin: 0 auto;
+
+    > div {
+      overflow: auto;
+    }
+  }
+}

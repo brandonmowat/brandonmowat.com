@@ -2,8 +2,6 @@ node_modules
 bundle.js
 index.js
 BeachHouse.jpg
-styles/sass/
 styles/style.css.map
 styles/.sass-cache
 .babelrc
-components
