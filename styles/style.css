@@ -126,6 +126,12 @@ section {
 .text-center {
   text-align: center; }
 
+@media (max-width: 700px) {
+  .flex {
+    display: block; }
+
+  .col-1-2 {
+    width: 100%; } }
 .logo img {
   width: 150px; }
 
