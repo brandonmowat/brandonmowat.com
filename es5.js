@@ -28,7 +28,7 @@ var Chat = function (_React$Component) {
   function Chat() {
     _classCallCheck(this, Chat);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Chat).call(this));
+    var _this = _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).call(this));
 
     _this.state = {
       messages: [{ type: 1, message: "Hey There!" }, // Gray bubble

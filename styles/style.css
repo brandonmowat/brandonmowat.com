@@ -208,21 +208,29 @@ section {
   width: 100%; }
 
 .chat-section {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
+  overflow: hidden;
   width: 80%; }
+
+form {
+  margin: 0; }
 
 .message-input {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
   width: calc(100%); }
 
 .message-input:focus {
   outline: none; }
 
 .chat-history {
+  padding: 10px;
   display: block;
   max-height: 400px; }
   .chat-history .outer {
@@ -234,6 +242,11 @@ section {
     margin: 0 auto; }
     .chat-history .inner > div {
       overflow: auto; }
+
+.chat-header {
+  background-color: #0084ff;
+  color: #fff;
+  padding: 15px; }
 
 .work-history .work-title {
   color: rgba(0, 0, 0, 0.3);

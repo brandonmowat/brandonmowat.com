@@ -1,16 +1,24 @@
 @import 'variables';
 
 .chat-section {
+  border: 1px solid $light-gray;
+  border-radius: 6px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
   margin: 0 auto;
+  overflow: hidden;
   width: 80%;
+}
+
+form {
+  margin: 0;
 }
 
 .message-input {
   border: 0;
   border-top: 1px solid $light-gray;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
-  padding: 40px;
+  padding: 20px;
   width: calc(100%);
 }
 
@@ -19,6 +27,7 @@
 }
 
 .chat-history {
+  padding: 10px;
   display: block;
   max-height: 400px;
 
@@ -36,4 +45,10 @@
       overflow: auto;
     }
   }
+}
+
+.chat-header {
+  background-color: $blue;
+  color: $white;
+  padding: 15px;
 }

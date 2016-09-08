@@ -29,7 +29,7 @@ var Chat = function (_React$Component) {
   function Chat() {
     _classCallCheck(this, Chat);
 
-    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Chat).call(this));
+    var _this = _possibleConstructorReturn(this, (Chat.__proto__ || Object.getPrototypeOf(Chat)).call(this));
 
     _this.state = {
       messages: [{ type: 1, message: "Hey There!" }, // Gray bubble
@@ -11480,6 +11480,7 @@ var styles = {
   chatbubble: {
     backgroundColor: "#03b4f4",
     borderRadius: 20,
+    clear: 'both',
     display: 'block',
     float: 'right',
     marginTop: 1,
@@ -11491,7 +11492,6 @@ var styles = {
     paddingRight: 14
   },
   recipientChatbubble: {
-    clear: 'both',
     float: 'left',
     marginLeft: 45,
     backgroundColor: '#ccc'
@@ -11643,9 +11643,9 @@ var _reactDom = require('react-dom');
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _ChatBubble = require('./ChatBubble');
+var _index = require('../ChatBubble/index.js');
 
-var _ChatBubble2 = _interopRequireDefault(_ChatBubble);
+var _index2 = _interopRequireDefault(_index);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -11685,7 +11685,6 @@ var ChatFeed = function (_Component) {
     _this.state = {
       messages: []
     };
-    console.log("Feed", _this.props);
     return _this;
   }
 
@@ -11706,23 +11705,24 @@ var ChatFeed = function (_Component) {
       _reactDom2.default.findDOMNode(chat).scrollTop = maxScrollTop > 0 ? maxScrollTop : 0;
     }
 
-    // Determine whether to render a group of messages or a single message
+    // Render Our Messages
 
   }, {
     key: '_renderGroup',
-    value: function _renderGroup(messages, index) {
+    value: function _renderGroup(messages, index, type) {
       var _this2 = this;
 
       var group = [];
 
-      for (var i = index; messages[i] ? messages[i].type : false; i--) {
+      for (var i = index; messages[i] ? messages[i].type == type : false; i--) {
         group.push(messages[i]);
       }
+      console.log(group);
 
       var message_nodes = group.reverse().map(function (curr, index) {
         return _react2.default.createElement(
-          _ChatBubble2.default,
-          { recipient: curr.type, bubbleStyles: _this2.props.bubbleStyles },
+          _index2.default,
+          { key: Math.random().toString(36), recipient: curr.type, bubbleStyles: _this2.props.bubbleStyles },
           curr.message
         );
       });
@@ -11732,52 +11732,36 @@ var ChatFeed = function (_Component) {
         message_nodes
       );
     }
-
-    // Render the message list as chat bubbles
-
   }, {
     key: '_renderMessages',
     value: function _renderMessages(messages) {
       var _this3 = this;
 
+      // map messages
       var message_nodes = messages.map(function (curr, index) {
 
-        if (!(messages[index - 1] ? messages[index - 1].type : false) && curr.type && !(messages[index + 1] ? messages[index + 1].type : false)) {
-          console.log("Single message");
-          return _react2.default.createElement(
-            'div',
-            { key: Math.random().toString(36), style: styles.chatbubbleWrapper },
-            _react2.default.createElement(
-              _ChatBubble2.default,
-              { recipient: 1, bubbleStyles: _this3.props.bubbleStyles ? _this3.props.bubbleStyles : {} },
-              curr.message
-            )
-          );
-        } else if (curr.type && (messages[index - 1] ? messages[index - 1].type : false) && !(messages[index + 1] ? messages[index + 1].type : false)) {
-          return _this3._renderGroup(messages, index);
-        } else if (!curr.type) {
-          return _react2.default.createElement(
-            'div',
-            { key: Math.random().toString(36), style: styles.chatbubbleWrapper },
-            _react2.default.createElement(
-              _ChatBubble2.default,
-              { recipient: 0, bubbleStyles: _this3.props.bubbleStyles ? _this3.props.bubbleStyles : {} },
-              curr.message
-            )
-          );
+        // Find diff in message type or no more messages
+        if ((messages[index + 1] ? false : true) || messages[index + 1].type != curr.type) {
+          // Render group
+          return _this3._renderGroup(messages, index, curr.type);
         }
       });
+
+      // Other end is typing...
       if (this.props.is_typing) {
         message_nodes.push(_react2.default.createElement(
           'div',
           { key: Math.random().toString(36), style: Object.assign({}, styles.recipient, styles.chatbubbleWrapper) },
           _react2.default.createElement(
-            _ChatBubble2.default,
+            _index2.default,
             { recipient: 1, bubbleStyles: this.props.bubbleStyles ? this.props.bubbleStyles : {} },
             '...'
           )
         ));
       }
+
+      // return nodes
+      console.log();
       return message_nodes;
     }
   }, {
@@ -11809,7 +11793,7 @@ var ChatFeed = function (_Component) {
 }(_react.Component);
 
 exports.default = ChatFeed;
-},{"./ChatBubble":29,"react":175,"react-dom":32}],31:[function(require,module,exports){
+},{"../ChatBubble/index.js":29,"react":175,"react-dom":32}],31:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -11817,19 +11801,19 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.ChatFeed = exports.ChatBubble = undefined;
 
-var _ChatBubble2 = require('./ChatBubble');
+var _index = require('./ChatBubble/index');
 
-var _ChatBubble3 = _interopRequireDefault(_ChatBubble2);
+var _index2 = _interopRequireDefault(_index);
 
-var _ChatFeed2 = require('./ChatFeed');
+var _index3 = require('./ChatFeed/index');
 
-var _ChatFeed3 = _interopRequireDefault(_ChatFeed2);
+var _index4 = _interopRequireDefault(_index3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.ChatBubble = _ChatBubble3.default;
-exports.ChatFeed = _ChatFeed3.default;
-},{"./ChatBubble":29,"./ChatFeed":30}],32:[function(require,module,exports){
+exports.ChatBubble = _index2.default;
+exports.ChatFeed = _index4.default;
+},{"./ChatBubble/index":29,"./ChatFeed/index":30}],32:[function(require,module,exports){
 'use strict';
 
 module.exports = require('react/lib/ReactDOM');
