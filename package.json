@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "react": "^15.3.1",
-    "react-chat-ui": "0.0.20",
+    "react-chat-ui": "0.0.21",
     "react-dom": "^15.3.1"
   }
 }

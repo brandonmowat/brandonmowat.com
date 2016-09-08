@@ -162,6 +162,10 @@ section {
     font-weight: 500;
     letter-spacing: -.02em; }
 
+.info-section {
+  margin: 0 auto;
+  max-width: 500px; }
+
 .short-intro {
   margin-top: 40px; }
   .short-intro h3 {
@@ -202,6 +206,10 @@ section {
   background-color: #947fff;
   padding: 15% 0;
   width: 100%; }
+
+.chat-section {
+  margin: 0 auto;
+  width: 80%; }
 
 .message-input {
   border: 0;
@@ -247,5 +255,10 @@ section {
   top: 27px;
   width: 10px;
   z-index: 10; }
+
+.img-sm {
+  display: block;
+  margin: 0 auto;
+  width: 150px; }
 
 /*# sourceMappingURL=style.css.map */

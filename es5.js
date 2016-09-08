@@ -31,7 +31,9 @@ var Chat = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Chat).call(this));
 
     _this.state = {
-      messages: [{ type: 1, message: "I can help with lots of stuff." }],
+      messages: [{ type: 1, message: "Hey There!" }, // Gray bubble
+      { type: 1, message: "I'm react-chat-ui! Type a message and press enter\
+        to send something." }],
       is_typing: false
     };
     return _this;
@@ -69,7 +71,8 @@ var Chat = function (_React$Component) {
               fontSize: 18
             },
             chatbubble: {
-              borderRadius: 100,
+              borderRadius: 25,
+              lineHeight: 1.3,
               marginLeft: 0,
               maxWidth: 600
             },

@@ -8,7 +8,9 @@ class Chat extends React.Component {
     super()
     this.state = {
       messages : [
-        {type:1, message: "I can help with lots of stuff."}, // Gray bubble
+        {type:1, message: "Hey There!"}, // Gray bubble
+        {type:1, message: "I'm react-chat-ui! Type a message and press enter\
+        to send something."}, // Gray bubble
       ],
       is_typing: false
     }
@@ -40,7 +42,8 @@ class Chat extends React.Component {
               fontSize: 18,
             },
             chatbubble: {
-              borderRadius: 100,
+              borderRadius: 25,
+              lineHeight: 1.3,
               marginLeft: 0,
               maxWidth: 600,
             },
