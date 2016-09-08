@@ -1,6 +1,7 @@
 node_modules
+index.js
 es5.js
 BeachHouse.jpg
-styles/style.css.map
-styles/.sass-cache
+style.css.map
+.sass-cache
 .babelrc
