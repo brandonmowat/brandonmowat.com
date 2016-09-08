@@ -6,6 +6,14 @@
   img {
     width: 150px;
   }
+
+  #logo {
+    transition: transform ease .3s;
+  }
+
+  .rotate {
+    transform: rotate(10deg);
+  }
 }
 
 .hero {
@@ -21,7 +29,7 @@
     }
 
     h1 {
-      font-weight: 400;
+      font-weight: 500;
       letter-spacing: -.02em;
     }
   }

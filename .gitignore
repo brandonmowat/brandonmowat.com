@@ -1,6 +1,5 @@
 node_modules
-bundle.js
-index.js
+es5.js
 BeachHouse.jpg
 styles/style.css.map
 styles/.sass-cache

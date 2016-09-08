@@ -1,16 +1,12 @@
 @import 'variables';
 
-.chat-section {
-  margin-right: 40px;
-}
-
 .message-input {
   border: 0;
   border-top: 1px solid $light-gray;
   font-size: 20px;
-  margin: 0 40px;
+  margin: 0;
   padding: 40px;
-  width: calc(100% - 40px);
+  width: calc(100%);
 }
 
 .message-input:focus {

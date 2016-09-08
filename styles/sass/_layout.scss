@@ -8,6 +8,10 @@ section {
   padding: 100px 0;
 }
 
+.sub-section {
+  margin-top: 50px;
+}
+
 .hero,
 .logo {
   padding-bottom: 0;
@@ -29,6 +33,10 @@ section {
 
 .flex {
   display: flex;
+}
+
+.flex-va {
+  align-items: center;
 }
 
 .col {
