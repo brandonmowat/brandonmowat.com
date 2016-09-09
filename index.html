@@ -9,16 +9,21 @@
 
 <body>
   <section class="logo">
-    <div class="container">
+    <div class="container text-center">
       <img id="logo" src="./assets/6god-thick.svg"/>
     </div>
   </section>
   <section class="hero">
-    <div class="container container--inner hero--content">
+    <div class="container container--inner hero--content text-center">
+      <h1>Hello, I'm Brandon Mowat.</h1>
+    </div>
+  </section>
+
+  <section class="border-bottom">
+    <div class="container container--inner">
       <div class="flex">
         <div class="col col-1-2"></div>
         <div class="col col-1-2">
-          <h1>Hello, I'm<br>Brandon Mowat.</h1>
           <h4>I'm a product designer and software engineer living and working in
           the beautiful city of Toronto.</h4>
         </div>
@@ -26,49 +31,20 @@
     </div>
   </section>
 
-  <div class="tdot">
-    <img src="./assets/tdot.jpg"/>
-  </div>
-
-  <section class="border-bottom">
+  <section class="portfolio-section border-bottom">
     <div class="container container--inner">
-      <div class="flex">
-        <div class="col col-1-2">
-          <img class="portrait" src="./assets/brandon-noback-sm.png">
-        </div>
-        <div class="col col-1-2">
-          <h5>About</h5>
-          <h3>My story</h3>
-          <p>I've always been a tinkerer and tended to pull toys apart as a kid.
-          Now I just tinker and break things on the internet.</p>
-          <p>I started coding in 2013 and followed that passion to the University
-          of Toronto where I now study computer science. In 2016 I founded a
-          company that was featured Product Hunt and created quite a buzz at UofT
-          when we delivered free pizza to everyone who used our app.</p>
-          <p>Now I'm working on other products and freelancing to help you get your
-          idea or business online.</p>
-          <br>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="border-bottom">
-    <div class="container container--inner">
-      <div class="flex">
-        <div class="col col-1-2">
-          <h5>Portfolio</h5>
-          <h3>Products &amp; Open Source</h3>
-        </div>
-      </div>
+      <h5 class="text-center">Portfolio</h5>
+      <h3 class="text-center">Products &amp; Open Source</h3>
 
       <div class="sub-section flex flex-va">
+
         <div class="col col-1-2">
           <h4 class="blue">react-chat-ui</h4>
           <p>A simple, modular ReactJS component that makes building chat interfaces a breeze.</p>
           <p>+1000 installs on npm</p>
           <a href="https://github.com/brandonmowat/react-chat-ui"class="btn">react-chat-ui on GitHub</a>
         </div>
+        
         <div class="col col-1-2">
           <div class="chat-section">
             <div class="chat-header">
@@ -116,6 +92,7 @@
               <span>UI/UX Design</span>
             </div>
           </div>
+          <a class="btn" href="mailto:brandonmowat11@gmail.com">Get in touch</a>
         </div>
       </div>
     </div>

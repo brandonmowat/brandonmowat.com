@@ -1,3 +1,5 @@
+'use-strict';
+
 import React from 'react';
 import { render } from 'react-dom';
 import { ChatFeed } from 'react-chat-ui';
@@ -5,7 +7,7 @@ import $ from 'jquery';
 
 class Chat extends React.Component {
   constructor() {
-    super()
+    super();
     this.state = {
       messages : [
         {type:1, message: "Hey There!"}, // Gray bubble

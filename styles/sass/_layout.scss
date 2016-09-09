@@ -1,7 +1,6 @@
 @import 'variables';
 
 html {
-  //border: 50px $light-gray solid;
 }
 
 section {
@@ -10,7 +9,7 @@ section {
 }
 
 .sub-section {
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .hero,
@@ -20,7 +19,8 @@ section {
 
 .container {
   margin: 0 auto;
-  max-width: 90%;
+  width: 90%;
+  max-width: 1100px;
 }
 
 .container--inner {
