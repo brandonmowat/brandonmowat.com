@@ -1,129 +1,96 @@
-
+<!doctype html>
 <html>
 <head>
   <title>Brandon Mowat</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css">
+  <link href="./style.css" type="text/css" rel="stylesheet"/>
 </head>
-
 <body>
-  <section class="logo">
-    <div class="container text-center">
-      <img id="logo" src="./assets/6god-thick.svg"/>
-    </div>
-  </section>
-  <section class="hero">
-    <div class="container container--inner hero--content text-center">
-      <h1>Hello, I'm Brandon Mowat.</h1>
-    </div>
-  </section>
-
-  <section class="border-bottom">
-    <div class="container container--inner">
-      <div class="flex">
-        <div class="col col-1-2"></div>
-        <div class="col col-1-2">
-          <h4>I'm a product designer and software engineer living and working in
-          the beautiful city of Toronto.</h4>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="portfolio-section border-bottom">
-    <div class="container container--inner">
-      <h5 class="text-center">Portfolio</h5>
-      <h3 class="text-center">Products &amp; Open Source</h3>
-
-      <div class="sub-section flex flex-va">
-
-        <div class="col col-1-2">
-          <h4 class="blue">react-chat-ui</h4>
-          <p>A simple, modular ReactJS component that makes building chat interfaces a breeze.</p>
-          <p>+1000 installs on npm</p>
-          <a href="https://github.com/brandonmowat/react-chat-ui"class="btn">react-chat-ui on GitHub</a>
-        </div>
-        
-        <div class="col col-1-2">
-          <div class="chat-section">
-            <div class="chat-header">
-              <span>react-chat-ui</span>
-            </div>
-            <div id="chat-section"></div>
-          </div>
-        </div>
-      </div>
-
-      <br></br>
-
-      <div class="sub-section flex flex-va">
-        <div class="col col-1-2"></div>
-        <div class="col col-1-2">
-          <h4>I'm building new things all the time. See more of what I've done and what I'm working on now.</h4>
-          <a href="https://github.com/brandonmowat/" class="btn">See more</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="border-bottom">
-    <div class="container container--inner">
-      <div class="flex">
-        <div class="col col-1-2 squares">
-          <!--<div id="chat-section"></div>-->
-          <img src="./assets/squares.svg"/>
-        </div>
-        <div class="col col-1-2">
-          <h5>Services</h5>
-          <h3>Things I can help you with</h3>
-          <p>I have experience in a variety of subjects from building and designing products to starting a start-up.</p>
-          <div class="accordian">
-            <div class="accordian--item">
-              <span>Product/Web/App Development</span>
-            </div>
-            <div class="accordian--item">
-              <span>Engineering Consulting</span>
-            </div>
-            <div class="accordian--item">
-              <span>Product Design</span>
-            </div>
-            <div class="accordian--item">
-              <span>UI/UX Design</span>
-            </div>
-          </div>
-          <a class="btn" href="mailto:brandonmowat11@gmail.com">Get in touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="color--section"></div>
-
-  <section>
-    <div class="container container--inner">
-      <div class="flex">
-        <div class="col col-1-2">
-        </div>
-        <div class="col col-1-2">
-          <h5>Contact</h5>
-          <h3>Let's make something together</h3>
-          <a href="mailto:brandonmowat11@gmail.com" class="btn">Get in touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="chat-section">
+  <div class="wrapper">
     <div class="container">
-      <h2 class="text-center">Let's talk.</h2>
-      <div id="chat-section"/>
+      <header>
+        <h1>Brandon Mowat</h1>
+      </header>
+      <div class="chat">
+        <div class="chat-section blue">
+          <h3 class="chat-title">You</h3>
+          <div class="chatbubble">
+            <p>U up?</p>
+          </div>
+        </div>
+
+        <div class="chat-section gray">
+          <h3 class="chat-title">Brandon</h3>
+          <div class="chatbubble">
+            <p>New server - who 'dis?</p>
+          </div>
+        </div>
+
+        <div class="chat-section blue">
+          <div class="chatbubble">
+            <p>Talk dirty to me.</p>
+          </div>
+        </div>
+
+        <div class="chat-section gray">
+          <div class="chatbubble">
+            <p>I'm a software engineer and self proclaimed product designer.</p>
+          </div>
+          <div class="chatbubble">
+            <p>Currently, I'm studying computer science at the University of Toronto.</p>
+          </div>
+        </div>
+
+        <div class="chat-section blue">
+          <div class="chatbubble">
+            <p>That's dope.</p>
+          </div>
+          <div class="chatbubble">
+            <p>What kind of things can you do?</p>
+          </div>
+        </div>
+
+        <div class="chat-section gray">
+          <div class="chatbubble">
+            <p>Well I'm pretty good at building things.</p>
+          </div>
+          <div class="chatbubble">
+            <p>Most of my web projects I'll either do vanilla or I'll use a library like ReactJS.</p>
+          </div>
+        </div>
+
+        <div class="chat-section blue">
+          <div class="chatbubble">
+            <p>What about mobile? Web is dead - mobile is totally lit.</p>
+          </div>
+        </div>
+
+        <div class="chat-section gray">
+          <div class="chatbubble">
+            <p>For an app I'd go with Swift for iOS. But it depends; React Native is pretty good too.</p>
+          </div>
+        </div>
+
+        <div class="chat-section blue">
+          <div class="chatbubble">
+            <p>Wow, you sound like mainly a Front-End guy. Not much of a "Computer Scientist".</p>
+          </div>
+        </div>
+
+        <div class="chat-section gray">
+          <div class="chatbubble">
+            <p>Chill. I've built RESTful API's too. Node.js, Flask, MongoDB, I could go on forever baby.</p>
+          </div>
+        </div>
+
+        <div class="chat-section blue">
+          <div class="chatbubble">
+            <p>*Swipes right*</p>
+          </div>
+        </div>
+
+
+      </div>
     </div>
-  </section> -->
-
-  <footer>
-  </footer>
-
-  <script src="./bundle.js"></script>
+  </div>
 </body>
 </html>

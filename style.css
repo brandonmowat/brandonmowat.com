@@ -1,0 +1,102 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: '-apple-system';
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.wrapper {
+  padding: 20px 50px;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.chat-section {
+  margin: 20px 0;
+  overflow: auto;
+  position: relative;
+}
+
+.chat-title {
+  width: 90%;
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0 39px;
+}
+
+.chat-section.blue::after {
+
+}
+
+.chat-section.blue .chat-title {
+  text-align: right;
+  float: right;
+}
+
+.chatbubble {
+  background-color: #e5e5ea;
+  border-radius: 3em;
+  clear: both;
+  padding: 20px 30px;
+  float: left;
+  margin: 2px 9px;
+  max-width: 550px;
+}
+
+.chat-section.blue .chatbubble  {
+  background-color: #057fff;
+  float: right;
+}
+
+.chat-section.blue .chatbubble:last-of-type::after {
+  content: '';
+  width: 30px;
+  height: 42px;
+  position: absolute;
+  bottom: 2px;
+  background-size: 30px 42px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  right: 0px;
+  background-image: url('./tail_blue.png');
+}
+
+.chat-section.gray .chatbubble:last-of-type::after {
+  content: '';
+  width: 30px;
+  height: 42px;
+  position: absolute;
+  bottom: 2px;
+  background-size: 30px 42px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  left: 0px;
+  background-image: url('./tail_gray.png');
+}
+
+.chatbubble p {
+  font-size: 2em;
+  margin: 0;
+}
+
+.chat-section.blue .chatbubble p {
+  color: #fff;
+}
