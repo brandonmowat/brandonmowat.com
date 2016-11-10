@@ -26,6 +26,12 @@ h3 {
   padding: 20px 50px;
 }
 
+@media (max-width: 800px) {
+  .wrapper {
+    padding: 20px 10px;
+  }
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
@@ -90,7 +96,7 @@ header {
   width: 30px;
   height: 42px;
   position: absolute;
-  bottom: 2px;
+  bottom: 0px;
   background-size: 30px 42px;
   background-repeat: no-repeat;
   background-position: center center;
@@ -101,6 +107,32 @@ header {
 .chatbubble p {
   font-size: 2em;
   margin: 0;
+}
+
+@media (max-width: 800px) {
+
+  .chatbubble {
+    border-radius: 2.5em;
+  }
+
+  .chat-section.gray .chatbubble:last-of-type::after,
+  .chat-section.blue .chatbubble:last-of-type::after {
+    width: 20px;
+    height: 37px;
+    background-size: 20px 37px;
+  }
+
+  .chat-section.gray .chatbubble:last-of-type::after {
+    left: 3px
+  }
+
+  .chat-section.blue .chatbubble:last-of-type::after {
+    right: 3px
+  }
+
+  .chatbubble p {
+    font-size: 1.5em;
+  }
 }
 
 .chat-section.blue .chatbubble p {
