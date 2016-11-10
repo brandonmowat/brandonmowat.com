@@ -81,10 +81,10 @@ header {
 .chat-section.blue .chatbubble:last-of-type::after {
   content: '';
   width: 30px;
-  height: 42px;
+  height: 43px;
   position: absolute;
   bottom: 2px;
-  background-size: 30px 42px;
+  background-size: 30px 43px;
   background-repeat: no-repeat;
   background-position: center center;
   right: 0px;
@@ -94,10 +94,10 @@ header {
 .chat-section.gray .chatbubble:last-of-type::after {
   content: '';
   width: 30px;
-  height: 42px;
+  height: 43px;
   position: absolute;
   bottom: 0px;
-  background-size: 30px 42px;
+  background-size: 30px 43px;
   background-repeat: no-repeat;
   background-position: center center;
   left: 0px;
