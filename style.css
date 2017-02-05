@@ -1,15 +1,17 @@
+/* (228, 80, 98) */
+
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont;
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont;
 }
 
 h1 {
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 300;
   letter-spacing: -0.02em;
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 h2 {
@@ -21,6 +23,27 @@ h2 {
 h3 {
   font-size: 25px;
   font-weight: 500;
+}
+
+.intro p.code {
+  font-family: monospace;
+  text-align: left;
+}
+
+.code span.keyword {
+  color: #F74160;
+}
+
+.code span.data-struct {
+  color: #66afe9;
+}
+
+.code span.string {
+  color: #4EBF4E;
+}
+
+span.highlight {
+  color: #F74160;
 }
 
 .wrapper {
@@ -39,7 +62,7 @@ h3 {
 }
 
 header {
-  padding: 150px 0 80px 0;
+  padding: 180px 0 100px 0;
 }
 
 header h1 {
@@ -48,6 +71,8 @@ header h1 {
 
 .intro {
   font-size: 1.3em;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .intro p {
