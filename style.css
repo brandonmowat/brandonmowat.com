@@ -22,7 +22,7 @@ h2 {
 
 h3 {
   font-size: 25px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .intro p.code {
@@ -93,13 +93,17 @@ header h1 {
   margin: 0 39px;
 }
 
-.chat-section.blue::after {
-
-}
-
 .chat-section.blue .chat-title {
   text-align: right;
   float: right;
+}
+
+p.emoji {
+  margin: 0;
+  font-size: 50px;
+  float: right;
+  clear: both;
+  padding: 10px 30px;
 }
 
 .chatbubble {
@@ -115,6 +119,7 @@ header h1 {
 .chat-section.blue .chatbubble  {
   background-color: #057fff;
   float: right;
+  border-radius: 3em;
 }
 
 .chat-section.blue .chatbubble:last-of-type::after {
