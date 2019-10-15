@@ -4,7 +4,8 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "San Francisco", -apple-system, BlinkMacSystemFont;
+  font-family: -apple-system, BlinkMacSystemFont;
+  line-height: 1.6;
 }
 
 h1 {
@@ -25,25 +26,8 @@ h3 {
   font-weight: 400;
 }
 
-.intro p.code {
-  font-family: monospace;
-  text-align: left;
-}
-
-.code span.keyword {
-  color: #F74160;
-}
-
-.code span.data-struct {
-  color: #66afe9;
-}
-
-.code span.string {
-  color: #4EBF4E;
-}
-
-span.highlight {
-  color: #F74160;
+p {
+  margin: 0;
 }
 
 .wrapper {
@@ -57,151 +41,29 @@ span.highlight {
 }
 
 .container {
-  max-width: 1080px;
+  max-width: 720px;
   margin: 0 auto;
 }
 
-header {
-  padding: 180px 0 100px 0;
-}
-
-header h1 {
-  text-align: center;
-}
-
-.intro {
-  font-size: 1.3em;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.intro p {
-  text-align: center;
-  line-height: 1.3;
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.chat-section {
-  margin: 20px 0;
-  overflow: auto;
-  position: relative;
-}
-
-.chat-title {
-  width: 90%;
-  color: rgba(0, 0, 0, 0.3);
-  margin: 0 39px;
-}
-
-.chat-section.blue .chat-title {
-  text-align: right;
-  float: right;
-}
-
-p.emoji {
-  margin: 0;
-  font-size: 50px;
-  float: right;
-  clear: both;
-  padding: 10px 30px;
-}
-
-.chatbubble {
-  background-color: #e5e5ea;
-  border-radius: 3em;
-  clear: both;
-  padding: 20px 30px;
-  float: left;
-  margin: 2px 9px;
-  max-width: 550px;
-}
-
-.chat-section.blue .chatbubble  {
-  background-color: #057fff;
-  float: right;
-  border-radius: 3em;
-}
-
-.chat-section.blue .chatbubble:last-of-type::after {
-  content: '';
-  width: 30px;
-  height: 43px;
-  position: absolute;
-  bottom: 2px;
-  background-size: 30px 43px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  right: 0px;
-  background-image: url('./tail_blue.png');
-}
-
-.chat-section.gray .chatbubble:last-of-type::after {
-  content: '';
-  width: 30px;
-  height: 43px;
-  position: absolute;
-  bottom: 0px;
-  background-size: 30px 43px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  left: 0px;
-  background-image: url('./tail_gray.png');
-}
-
-.chatbubble p {
-  font-size: 2em;
-  margin: 0;
-}
-
-@media (max-width: 800px) {
-
-  .chatbubble {
-    border-radius: 2.5em;
-  }
-
-  .chat-section.gray .chatbubble:last-of-type::after,
-  .chat-section.blue .chatbubble:last-of-type::after {
-    width: 20px;
-    height: 37px;
-    background-size: 20px 37px;
-  }
-
-  .chat-section.gray .chatbubble:last-of-type::after {
-    left: 3px
-  }
-
-  .chat-section.blue .chatbubble:last-of-type::after {
-    right: 3px
-  }
-
-  .chatbubble p {
-    font-size: 1.5em;
-  }
-}
-
-.chat-section.blue .chatbubble p {
-  color: #fff;
-}
-
-
-.footer {
-  padding: 150px 0;
-}
-
-.footer h2 {
-  text-align: center;
-}
-
-.footer .links {
-  margin: 0 auto;
+section {
   display: flex;
-  justify-content: center;
+  margin: 32px 0;
 }
 
-.footer .links a {
-  text-decoration: none;
-  margin: 0 5px;
-  color: rgba(0, 0, 0, 0.7);
+section.header {
+  margin: 64px 0;
+}
+
+section .col-2 {
+  flex: 2;
+}
+
+section .col-4 {
+  flex: 4;
+}
+
+section a {
+  display: block;
 }
 
 
