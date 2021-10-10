@@ -69,11 +69,13 @@ section .col-4 {
 }
 
 section p a {
+  color: #4734f3;
 }
 
 section.social a {
   display: block;
   font-size: 2em;
+  color: #4734f3;
 }
 
 .chat-bubble {
